@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+    // $('.navbar-nav').on('click', '.nav-item', function () {
+    //     $('.navbar-nav nav-item.active').removeClass('active');
+    //     $(this).addClass('active');
+    // });
+
     //Tombol cari
     $('#tombol-cari').hide();
     //Event ketika keyword di tulis

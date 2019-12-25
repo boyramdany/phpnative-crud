@@ -1,5 +1,6 @@
 <?php
 session_start();
+$page = "Home";
 // kalau session gak ada di balikin ke halaman login, ga bisa ke index.php
 if (!isset($_SESSION["login"])) {
     header("Location: login.php");
@@ -44,7 +45,7 @@ if (isset($_POST["search"])) {
 <html>
 
 <head>
-    <title>PHP NATIVE CRUD</title>
+    <title><?= $page; ?></title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome -->

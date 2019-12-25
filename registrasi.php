@@ -1,5 +1,5 @@
 <?php
-
+$page = "Registrasi";
 include('connection.php');
 include('functions.php');
 
@@ -31,7 +31,7 @@ if (isset($_POST['register'])) {
     <div class="container">
         <div class="row my-5">
             <div class="col text-center">
-                <h1>Registrasi User</h1>
+                <h1><?= $page; ?> User</h1>
             </div>
         </div>
         <div class="row">

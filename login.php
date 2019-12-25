@@ -1,5 +1,6 @@
 <?php
 session_start();
+$page = "Login";
 include('connection.php');
 include('functions.php');
 
@@ -59,7 +60,7 @@ if (isset($_POST['login'])) {
 ?>
 
 <head>
-    <title>Login</title>
+    <title><?= $page; ?></title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome -->
